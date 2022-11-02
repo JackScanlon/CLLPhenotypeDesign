@@ -1,0 +1,10 @@
+doctype html
+block vars
+html(data-brand='#{brand}')
+  head
+    title=title
+    meta(name='description', content='#{description}')
+    link(rel='stylesheet', href='/styles/main.css?=#{uuid}')
+    script(type='module', src='/js/main.js')
+  body
+    block content
